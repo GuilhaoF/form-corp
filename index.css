@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-main:#502064;
+    --background-login:#FF5677;
+    --background-button:#370665;
+}
+body{
+   background:var(--background-main);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form#login-form{
+    background: #fff;
+    width: 40em;
+    max-width: 700px;
+    margin: 10em auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.3em;
+    box-shadow: 0 0 0.2em #000;
+}
+div.heading{
+    text-align: center;
+    background: var(--background-login);
+    text-transform: uppercase;
+    padding: 1.5em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+div.left{
+    width: 45%;
+    float: left;
+    padding: 1.9em 1.5em 2.5em 1.5em;
+    box-sizing: border-box;
+    margin-left: 2em ;
+}
+div.left label{
+    display: inline-block;
+    color: gray;
+    font-size: 1.1em;
+}
+input[type="email"],input[type="password"],input[type="text"]{
+ padding: 1em;
+ max-width: 88.5%;
+ border-radius: 0.4em;
+ outline: none;
+ border: 0.1em solid darken(#eee,6%);
+ margin: 0.6em 0.1em;
+ box-shadow: 0 0 0.2em rgba(darken(#eee,6%),0.2);
+
+}
+input[type="checkbox"]{
+ margin:0.6em 0.2em ;
+}
+input[type="submit"]{
+   border-radius: 0.4em;
+   outline: none;
+   padding: 1.2em;
+   background: var(--background-button);
+   color: #fff;
+   overflow: hidden;
+   text-transform: uppercase;
+   border: none;
+   margin: 0.8em 0;
+   font-weight: bold;
+   letter-spacing: 0.1em;
+}
+:focus{
+    outline: none;
+    border: 0.1em solid darken(#aaa,10%);
+}
+div.right{
+    width: 45%;
+    float: right;
+    padding: 1.9em 1.5em 0.7em 1.5em;
+    box-sizing: border-box;
+    margin-right: 2em;
+}
+div.heading-right{
+    text-align: center;
+    font-weight: bold;
+    padding: 0.2em;
+    margin-top: -0.5em;
+}
+.right-img{
+    width: 250px;
+    height: 250px;
+    margin-left: 6px;
+}
+.footer{
+    width: 40em;
+    background: var(--background-login);
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+

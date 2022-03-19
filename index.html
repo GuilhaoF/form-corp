@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./src/icon/auth.ico">
+    <link rel="stylesheet" href="./index.css">
+    <title>Inter-Login</title>
+</head>
+
+<body>
+    <form id="login-form" action="#">
+        <div class="heading">InterCorp</div>
+        <div class="left">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <br />
+            <label for="email">Password</label>
+            <input type="password" name="password" id="password">
+            <br />
+            <input type="checkbox" onclick="visibilityPassword()" /><label>Show Password</label>
+            <br />
+            <input type="submit" value="Entrar" />
+        </div>
+        <div class="right">
+            <div class="heading-right">Logue-se no Sistema Corporativo</div>
+            <img class="right-img" src="./src/assets/img-main.svg">
+        </div>
+        <div class="footer">
+           Sistemas Desenvolvido por Luis Felipe.
+        </div>
+    </form>
+    
+    <script src="./src/scripts/index.js"></script>
+</body>
+
+</html>
